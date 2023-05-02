@@ -12,8 +12,17 @@
 			} else if (/android/i.test(userAgent)) {
 				window.location = "https://play.google.com/store/apps/details?id=com.simpletor.management_system_app&hl=iw";
 			}
-			window.location = "https://officialsimplecode.github.io/SimpleCodeWeb/";
 		})();
+
+		// Redirect to web option if the screen stays blank
+		setTimeout(function() {
+			if (window.location.href === "https://officialsimplecode.github.io/DownloadSimpleTor/") {
+				// window.location.reload();
+				window.location = "https://officialsimplecode.github.io/SimpleCodeWeb/";
+			} else {
+				// window.location = "https://officialsimplecode.github.io/SimpleCodeWeb/";
+			}
+		}, 3000); // Change the delay time (in milliseconds) to a value that suits your needs
 	</script>
 </head>
 <body>
