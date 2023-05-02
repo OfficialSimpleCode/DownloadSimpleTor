@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SimpleTor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		(function() {
+			var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				window.location = "https://apps.apple.com/il/app/simple-tor/id6444347892";
+			} else if (/android/i.test(userAgent)) {
+				window.location = "https://play.google.com/store/apps/details?id=com.simpletor.management_system_app&hl=iw";
+			} else {
+				window.location = "https://officialsimplecode.github.io/SimpleCodeWeb/";
+			}
+		})();
+	</script>
+</head>
+<body>
+	<h1>Welcome to SimpleTor</h1>
+	<p>If you are not redirected, click on the appropriate link:</p>
+	<ul>
+		<li><a href="https://apps.apple.com/il/app/simple-tor/id6444347892">iOS</a></li>
+		<li><a href="https://play.google.com/store/apps/details?id=com.simpletor.management_system_app&hl=iw">Android</a></li>
+		<li><a href="https://officialsimplecode.github.io/SimpleCodeWeb/">Web</a></li>
+	</ul>
+</body>
+</html>
